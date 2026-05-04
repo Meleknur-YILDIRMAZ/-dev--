@@ -22,14 +22,14 @@ jobs:
     - name: Image push
       run: docker push meleknur123/myapp:latest
 
-    - name: Ansible kur
-      run: sudo apt install ansible -y
+#    - name: Ansible kur
+#      run: sudo apt install ansible -y
 
-    - name: SSH key ekle
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
+#    - name: SSH key ekle
+#      run: |
+#        mkdir -p ~/.ssh
+#        echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+#        chmod 600 ~/.ssh/id_rsa
 
-    - name: Deploy
-      run: ansible-playbook -i ansible/inventory.ini ansible/deploy.yml
+#    - name: Deploy
+#      run: ansible-playbook -i ansible/inventory.ini ansible/deploy.yml
