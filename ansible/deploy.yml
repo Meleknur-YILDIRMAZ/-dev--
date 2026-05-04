@@ -4,17 +4,17 @@
 
   tasks:
 
-    - name: Docker kur
-      apt:
-        name: docker.io
-        state: present
-        update_cache: yes
+#    - name: Docker kur
+#      apt:
+#        name: docker.io
+#        state: present
+#        update_cache: yes
 
-    - name: Docker başlat
-      service:
-        name: docker
-        state: started
-        enabled: yes
+#    - name: Docker başlat
+#      service:
+#        name: docker
+#        state: started
+#        enabled: yes
 
     - name: Eski container sil
       shell: docker rm -f myapp || true
