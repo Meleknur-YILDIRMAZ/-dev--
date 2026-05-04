@@ -1,0 +1,10 @@
+.gradle/
+__pycache__/
+*.pyc
+.ssh/
+venv/
+.env
+.idea/
+.vscode/
+bin/
+obj/
